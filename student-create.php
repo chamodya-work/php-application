@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -13,13 +17,13 @@
 
     <div class="container mt-5">
 
-        <!-- <?php include('message.php'); ?> -->
+        <?php include('message.php'); ?>
 
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Student Add Software
+                        <h4>Student Add Application
                             <a href="index.php" class="btn btn-danger float-end">BACK</a>
                         </h4>
                     </div>
@@ -28,7 +32,7 @@
 
                             <div class="mb-3">
                                 <label>Student Name</label>
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="name" class="form-control" required>
                             </div>
                             <div class="mb-3">
                                 <label>Student Email</label>
